@@ -1,0 +1,26 @@
+[[resources-ca-server]]
+== CA Server
+
+[[resources-find-ca-servers]]
+=== Find CA servers template
+
+==== Request structure
+include::{snippets}/ca-server/find-ca-servers/http-request.adoc[]
+
+==== Example response
+include::{snippets}/ca-server/find-ca-servers/http-response.adoc[]
+
+==== CURL request
+include::{snippets}/ca-server/find-ca-servers/curl-request.adoc[]
+
+[[resources-find-ca-servers-by-orgtype]]
+=== Find CA servers by OrgType template
+
+==== Request structure
+include::{snippets}/ca-server/find-ca-servers-by-orgtype/http-request.adoc[]
+
+==== Example response
+include::{snippets}/ca-server/find-ca-servers-by-orgtype/http-response.adoc[]
+
+==== CURL request
+include::{snippets}/ca-server/find-ca-servers-by-orgtype/curl-request.adoc[]

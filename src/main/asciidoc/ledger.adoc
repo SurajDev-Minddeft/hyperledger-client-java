@@ -1,0 +1,50 @@
+[[resources-ledger]]
+== Ledger
+
+[[resources-create-credits]]
+=== Create credits template
+
+==== Request structure
+include::{snippets}/ledger/create-credits/http-request.adoc[]
+
+==== Example response
+include::{snippets}/ledger/create-credits/http-response.adoc[]
+
+==== CURL request
+include::{snippets}/ledger/create-credits/curl-request.adoc[]
+
+[[resources-move-balance]]
+=== Move balance template
+
+==== Request structure
+include::{snippets}/ledger/move-balance/http-request.adoc[]
+
+==== Example response
+include::{snippets}/ledger/move-balance/http-response.adoc[]
+
+==== CURL request
+include::{snippets}/ledger/move-balance/curl-request.adoc[]
+
+[[resources-get-entry]]
+=== Get entry template
+
+==== Request structure
+include::{snippets}/ledger/get-entry/http-request.adoc[]
+
+==== Example response
+include::{snippets}/ledger/get-entry/http-response.adoc[]
+
+==== CURL request
+include::{snippets}/ledger/get-entry/curl-request.adoc[]
+
+[[resources-get-wallets-entries]]
+=== Get wallets entries template
+
+==== Request structure
+include::{snippets}/ledger/get-wallets-entries/http-request.adoc[]
+
+==== Example response
+include::{snippets}/ledger/get-wallets-entries/http-response.adoc[]
+
+==== CURL request
+include::{snippets}/ledger/get-wallets-entries/curl-request.adoc[]

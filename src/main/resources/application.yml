@@ -1,0 +1,78 @@
+server:
+  port: 8091
+  undertow:
+    io-threads: 8
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  profiles:
+    active: dev
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:1235}/${DB_SCHEMA:ecmr}
+    username: ${DB_USER:wujek}
+    password: ${DB_PASSWORD:pompa}
+    hikari:
+      maximum-pool-size: 10
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+          temp:
+            use_jdbc_metadata_defaults: false
+
+management:
+  endpoint:
+    health:
+      show-details: always
+
+scheduling:
+  reenroll:
+    enabled: false
+
+caching:
+  enabled: false
+
+aws:
+  region: us-east-1
+  bucket:
+    chaincode:
+      name: utavi-chaincode-repository
+      prefix: develop
+      branch: develop
+  sqs:
+    tx-processing-queue: ${TX_PROCESSING_QUEUE:dev_ledger-processing-queue.fifo
+chaincode-location: s3
+
+#hl:
+#  resourceServer:
+#    url: http://localhost:30000
+#  host: localhost
+#  lator:
+#    url: http://localhost:30059
+#  channel-profile: OrgsChannel
+#  sdk-version: @hf.sdk.version@
+#  proposal-wait-time:
+#    user-transaction: 90000
+#    admin-transaction: 120000
+
+# AES only supports key sizes of 16, 24 or 32 bytes.
+crypt:
+  secretkey: ${CRYPT_SECRETKEY:TheBestSecretKey}
+
+executor:
+  pool:
+    core-size: 8
+    max-size: 24
+    queue-capacity: 200
+
+application:
+  version: local
+
+transactions:
+  timeout: ${TRANSACTIONS_TIMEOUT:60}
+

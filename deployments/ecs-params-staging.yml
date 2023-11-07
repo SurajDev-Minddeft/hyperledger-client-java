@@ -1,0 +1,13 @@
+# mem_limit - hard limit used to prevent out of memory issue on EC2 instance preventing
+# containers to be running if there's not enough resources or there's memory leak
+# mem_reservation - soft limit used for CPU intesnsive load or initial service deployment
+# to get real memory usage
+---
+version: 1
+task_definition:
+  ecs_network_mode: bridge
+  task_role_arn: ecs_service_role_stage_utavi-ledger-client
+  services:
+    utavi-ledger-client:
+      mem_limit: 1.5GB
+      mem_reservation: 256MB

@@ -1,0 +1,62 @@
+[[resources-chaincode]]
+== Chaincode
+
+[[resources-install-chaincode]]
+=== Install chaincode template
+
+==== Request structure
+include::{snippets}/chaincode/install-chaincode/http-request.adoc[]
+
+==== Example response
+include::{snippets}/chaincode/install-chaincode/http-response.adoc[]
+
+==== CURL request
+include::{snippets}/chaincode/install-chaincode/curl-request.adoc[]
+
+[[resources-instantiate-chaincode]]
+=== Instantiate chaincode template
+
+==== Request structure
+include::{snippets}/chaincode/instantiate-chaincode/http-request.adoc[]
+
+==== Example response
+include::{snippets}/chaincode/instantiate-chaincode/http-response.adoc[]
+
+==== CURL request
+include::{snippets}/chaincode/instantiate-chaincode/curl-request.adoc[]
+
+[[resources-upgrade-chaincode]]
+=== Upgrade chaincode template
+
+==== Request structure
+include::{snippets}/chaincode/upgrade-chaincode/http-request.adoc[]
+
+==== Example response
+include::{snippets}/chaincode/upgrade-chaincode/http-response.adoc[]
+
+==== CURL request
+include::{snippets}/chaincode/upgrade-chaincode/curl-request.adoc[]
+
+[[resources-write-new-chaincode-info]]
+=== Write new chaincode info template
+
+==== Request structure
+include::{snippets}/chaincode/write-new-chaincode-info/http-request.adoc[]
+
+==== Example response
+include::{snippets}/chaincode/write-new-chaincode-info/http-response.adoc[]
+
+==== CURL request
+include::{snippets}/chaincode/write-new-chaincode-info/curl-request.adoc[]
+
+[[resources-upgrade-status]]
+=== Check upgrade status of a chaincode on a given channel
+
+==== Request structure
+include::{snippets}/chaincode/upgrade-status/http-request.adoc[]
+
+==== Example response
+include::{snippets}/chaincode/upgrade-status/http-response.adoc[]
+
+==== CURL request
+include::{snippets}/chaincode/upgrade-status/curl-request.adoc[]

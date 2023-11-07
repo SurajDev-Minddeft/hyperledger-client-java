@@ -1,0 +1,134 @@
+[[resources-account]]
+== Account
+
+[[resources-create-account]]
+=== Create account template
+
+==== Request structure
+include::{snippets}/account/create-account/http-request.adoc[]
+
+==== Example response
+include::{snippets}/account/create-account/http-response.adoc[]
+
+==== CURL request
+include::{snippets}/account/create-account/curl-request.adoc[]
+
+[[resources-find-ca-identities-by-registrar]]
+=== Find CA identities by registrar template
+
+==== Request structure
+include::{snippets}/account/find-ca-identities-by-registrar/http-request.adoc[]
+
+==== Example response
+include::{snippets}/account/find-ca-identities-by-registrar/http-response.adoc[]
+
+==== CURL request
+include::{snippets}/account/find-ca-identities-by-registrar/curl-request.adoc[]
+
+[[resources-find-single-ca-identity-by-registrar]]
+=== Find a single CA identity by registrar template
+
+==== Request structure
+include::{snippets}/account/find-single-ca-identity-by-registrar/http-request.adoc[]
+
+==== Example response
+include::{snippets}/account/find-single-ca-identity-by-registrar/http-response.adoc[]
+
+==== CURL request
+include::{snippets}/account/find-single-ca-identity-by-registrar/curl-request.adoc[]
+
+[[resources-account-join-silo]]
+=== Account JOIN_SILO template
+
+==== Request structure
+include::{snippets}/account/account-join-silo/http-request.adoc[]
+
+==== Example response
+include::{snippets}/account/account-join-silo/http-response.adoc[]
+
+==== CURL request
+include::{snippets}/account/account-join-silo/curl-request.adoc[]
+
+[[resources-account-leave-silo]]
+=== Account LEAVE_SILO template
+
+==== Request structure
+include::{snippets}/account/account-leave-silo/http-request.adoc[]
+
+==== Example response
+include::{snippets}/account/account-leave-silo/http-response.adoc[]
+
+==== CURL request
+include::{snippets}/account/account-leave-silo/curl-request.adoc[]
+
+[[resources-find-accounts]]
+=== Find Accounts template
+
+==== Request structure
+include::{snippets}/account/find-accounts/http-request.adoc[]
+
+==== Example response
+include::{snippets}/account/find-accounts/http-response.adoc[]
+
+==== CURL request
+include::{snippets}/account/find-accounts/curl-request.adoc[]
+
+[[resources-enroll-account]]
+=== Enroll account template
+
+==== Request structure
+include::{snippets}/account/enroll-account/http-request.adoc[]
+
+==== Example response
+include::{snippets}/account/enroll-account/http-response.adoc[]
+
+==== CURL request
+include::{snippets}/account/enroll-account/curl-request.adoc[]
+
+[[resources-re-enroll-account]]
+=== Re-enroll account template
+
+==== Request structure
+include::{snippets}/account/re-enroll-account/http-request.adoc[]
+
+==== Example response
+include::{snippets}/account/re-enroll-account/http-response.adoc[]
+
+==== CURL request
+include::{snippets}/account/re-enroll-account/curl-request.adoc[]
+
+[[resources-revoke-enrollment]]
+=== Revoke an enrollment for account template
+
+==== Request structure
+include::{snippets}/account/revoke-enrollment/http-request.adoc[]
+
+==== Example response
+include::{snippets}/account/revoke-enrollment/http-response.adoc[]
+
+==== CURL request
+include::{snippets}/account/revoke-enrollment/curl-request.adoc[]
+
+[[resources-publish-admin-cert-to-msp]]
+=== Publish admin cert to MSP template
+
+==== Request structure
+include::{snippets}/account/publish-admin-cert-to-msp/http-request.adoc[]
+
+==== Example response
+include::{snippets}/account/publish-admin-cert-to-msp/http-response.adoc[]
+
+==== CURL request
+include::{snippets}/account/publish-admin-cert-to-msp/curl-request.adoc[]
+
+[[resources-account-change-password]]
+=== Change accounts password template
+
+==== Request structure
+include::{snippets}/account/account-change-password/http-request.adoc[]
+
+==== Example response
+include::{snippets}/account/account-change-password/http-response.adoc[]
+
+==== CURL request
+include::{snippets}/account/account-change-password/curl-request.adoc[]

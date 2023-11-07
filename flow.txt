@@ -1,0 +1,71 @@
+1. Inicjalizacja środowiska z https://utavi.atlassian.net/wiki/spaces/UT2/pages/1551499305/How+to+initialize+HL+fabric+network+for+the+Ledger+the+DEV+DEMO+and+PROD+environments
+
+
+PATCH OrgInfoOrderer
+Tworzona jest konfiguracja domyslna orderera w bazie tylko - odczytywana z hl-resources-server, a on ją czyta z pliku.
+
+/v1/manage/organization/ORDERER - zmieniłem to na POST, jak jest konfiguracja o podanym name to sie wywali.
+Teraz nie odczytuje z HL servera ale przyjmuje dane w requescie.
+
+PATCH OrgInfoPeer
+/v1/manage/organization/PEER
+tutaj to samo ale dla orderera
+
+PATCH BootstrapPeersInfo
+/v1/manage/node/PEER
+
+NetworkNodeConfigController jest wołany a tam odczytywana konfiguracja z bazy lc_org_info i generowana domyslna do lc_peer_info.
+Co ciekawe laduje np. ilosc node'ow domyslna z org_info a potem dodaje im porty 30400 + 1, aż do 12 :D
+
+PATCH BootstrapPeerCaInfo
+to zapisuje poczatkowe dane ca, wszystko z konfiguracji odczytane
+
+PATCH BootstrapOrdererCaInfo
+to zapisuje poczatkowe dane ca, wszystko z konfiguracji odczytane
+
+PATCH BootstrapOrderersInfo
+generowane
+
+POST BootstrapChaincodeInfo
+z s3 pobrane i zapisane tylko w bazce
+
+PATCH BootstrapUser
+to wlascieiwe realnie wola Fabric Ca, mysle ze niepotrzebne
+
+PATCH BootstrapAdmin
+to wlascieiwe realnie wola Fabric Ca, mysle ze niepotrzebne
+
+
+2. Stworzenie kanałów
+
+POST /v1/manage/fabric/channel - Create Channel
+POST /v1/manage/fabric/channel/join - Join Peers to Channel
+POST /v1/channel/set-peers - Attach Peers to Channel
+POST /v1/chaincode/install - Install Chaincode on Peers
+POST /v1/manage/fabric/channel/<name>/initialize - Initialize channel (not in list, but in video)
+POST /v1/chaincode/instantiate - Install Chaincode on Peers (or more described by Instantiate chaincode)
+
+
+
+3. API klienckie:
+
+
+3.1 utavi-user-service
+POST /v1/account/join - tworzy nowe konto w CA z tym zapisem w certyfikacie
+POST /v1/account/leave - de facto też tworzy nowe konto w CA z tym zapisem w certyfikacie ze opuscil silosa - czyli wywala typa z silosa
+POST /v1/channel/attach - to znajduje w bazie nowy kanal bez silosa (kazdy), zapisuje w bazie polaczenie tego kanalu z silosem i wywoluje 1 transakcje w chaincode, zapisujac api key
+POST /v1/account/revoke/{name}?orgType=PEER - w zasadzie calkowicie wycofuje usera z sieci
+GET /v1/version
+
+3.2 utavi-credits-exchange
+POST /v1/ledger/invoke/create-credits
+POST /v1/ledger/invoke/move-balance
+GET /v1/ledger/query/entries
+
+
+
+
+1. Co dziwnego?
+AccountEntityListener - tam jest postlistner ktory odkodowuje w runtime Enrollment z secretsów zapisanych w bazie.
+Wg mnie kompletny bullshit, bo ten enrollement faktycznie nie jest serializowany, ale są zapisywane sekrety do zlożenia go w całość.Lol?
+

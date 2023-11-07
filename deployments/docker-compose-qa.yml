@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+  utavi-ledger-client:
+    image: 551641973471.dkr.ecr.us-east-1.amazonaws.com/ledger-client:latest
+    ports:
+      - 0:8091
+    environment:
+      - DB_HOST=pgdb.qa.utavi.com
+      - DB_SCHEMA=utavi-ledger-db
+      - DB_USER=ssm_stored_encrypted
+      - DB_PASSWORD=ssm_stored_encrypted
+      - AWS_SERVICES_RETRY_NUM=0
+      - ENVIRONMENT=qa
+      - RESOURCE_SERVER_HOST=kube.qa.utavi.com
+      - RESOURCE_SERVER_PORT=30000
+      - LATOR_HOST=kube.qa.utavi.com
+      - LATOR_PORT=30059
+      - FABRIC_HOST=kube.qa.utavi.com
+      - CHANNEL_NUM=4
+      - PEERS_PER_CHANNEL=3
+      - PEER_START_PORT=30400
+      - PEER_ORG_ICA_START_PORT=31154
+      - ORDERER_START_PORT=30300
+      - ORDERER_ORG_ICA_START_PORT=30154
+      - ICA_MAIN_BOOTSTRAP_USER=ssm_stored_encrypted
+      - ICA_MAIN_BOOTSTRAP_PW=ssm_stored_encrypted
+      - ICA_ORDERER_BOOTSTRAP_USER=ssm_stored_encrypted
+      - ICA_ORDERER_BOOTSTRAP_PW=ssm_stored_encrypted
+      - USER_TX_PROPOSAL_WAIT_TIME=90000
+      - ADMIN_TX_PROPOSAL_WAIT_TIME=120000
+      - TX_PROCESSING_QUEUE=qa_ledger-processing-queue.fifo

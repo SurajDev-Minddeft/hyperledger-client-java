@@ -1,0 +1,123 @@
+[[resources-channel-config]]
+== Channel config
+
+[[resources-update-absolute-max-bytes]]
+=== Update absolute max bytes template
+
+==== Request structure
+include::{snippets}/channel-config/update-absolute-max-bytes/http-request.adoc[]
+
+==== Example response
+include::{snippets}/channel-config/update-absolute-max-bytes/http-response.adoc[]
+
+==== CURL request
+include::{snippets}/channel-config/update-absolute-max-bytes/curl-request.adoc[]
+
+[[resources-get-absolute-max-bytes]]
+=== Get absolute max bytes template
+
+==== Request structure
+include::{snippets}/channel-config/get-absolute-max-bytes/http-request.adoc[]
+
+==== Example response
+include::{snippets}/channel-config/get-absolute-max-bytes/http-response.adoc[]
+
+==== CURL request
+include::{snippets}/channel-config/get-absolute-max-bytes/curl-request.adoc[]
+
+[[resources-update-batch-timeout]]
+=== Update batch timeout template
+
+==== Request structure
+include::{snippets}/channel-config/update-batch-timeout/http-request.adoc[]
+
+==== Example response
+include::{snippets}/channel-config/update-batch-timeout/http-response.adoc[]
+
+==== CURL request
+include::{snippets}/channel-config/update-batch-timeout/curl-request.adoc[]
+
+[[resources-get-batch-timeout]]
+=== Get batch timeout template
+
+==== Request structure
+include::{snippets}/channel-config/get-batch-timeout/http-request.adoc[]
+
+==== Example response
+include::{snippets}/channel-config/get-batch-timeout/http-response.adoc[]
+
+==== CURL request
+include::{snippets}/channel-config/get-batch-timeout/curl-request.adoc[]
+
+[[resources-update-preferred-max-bytes]]
+=== Update preferred max bytes template
+
+==== Request structure
+include::{snippets}/channel-config/update-preferred-max-bytes/http-request.adoc[]
+
+==== Example response
+include::{snippets}/channel-config/update-preferred-max-bytes/http-response.adoc[]
+
+==== CURL request
+include::{snippets}/channel-config/update-preferred-max-bytes/curl-request.adoc[]
+
+
+[[resources-get-preferred-max-bytes]]
+=== Get preferred max bytes template
+
+==== Request structure
+include::{snippets}/channel-config/get-preferred-max-bytes/http-request.adoc[]
+
+==== Example response
+include::{snippets}/channel-config/get-preferred-max-bytes/http-response.adoc[]
+
+==== CURL request
+include::{snippets}/channel-config/get-preferred-max-bytes/curl-request.adoc[]
+
+[[resources-update-max-message-count]]
+=== Update max message count
+
+==== Request structure
+include::{snippets}/channel-config/update-max-message-count/http-request.adoc[]
+
+==== Example response
+include::{snippets}/channel-config/update-max-message-count/http-response.adoc[]
+
+==== CURL request
+include::{snippets}/channel-config/update-max-message-count/curl-request.adoc[]
+
+[[resources-get-max-message-count]]
+=== Get max message count
+
+==== Request structure
+include::{snippets}/channel-config/get-max-message-count/http-request.adoc[]
+
+==== Example response
+include::{snippets}/channel-config/get-max-message-count/http-response.adoc[]
+
+==== CURL request
+include::{snippets}/channel-config/get-max-message-count/curl-request.adoc[]
+
+[[resources-update-channel-add-new-org]]
+=== Add new organization
+
+==== Request structure
+include::{snippets}/channel-config/update-channel-add-new-org/http-request.adoc[]
+
+==== Example response
+include::{snippets}/channel-config/update-channel-add-new-org/http-response.adoc[]
+
+==== CURL request
+include::{snippets}/channel-config/update-channel-add-new-org/curl-request.adoc[]
+
+[[resources-add-org-admin-to-channel]]
+=== Add new admin to a channel
+
+==== Request structure
+include::{snippets}/channel-config/add-org-admin-to-channel/http-request.adoc[]
+
+==== Example response
+include::{snippets}/channel-config/add-org-admin-to-channel/http-response.adoc[]
+
+==== CURL request
+include::{snippets}/channel-config/add-org-admin-to-channel/curl-request.adoc[]

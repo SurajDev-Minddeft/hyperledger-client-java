@@ -1,0 +1,14 @@
+[[resources-orderer]]
+== Orderer
+
+[[resources-find-orderers]]
+=== Find Orderers template
+
+==== Request structure
+include::{snippets}/orderer/find-orderers/http-request.adoc[]
+
+==== Example response
+include::{snippets}/orderer/find-orderers/http-response.adoc[]
+
+==== CURL request
+include::{snippets}/orderer/find-orderers/curl-request.adoc[]

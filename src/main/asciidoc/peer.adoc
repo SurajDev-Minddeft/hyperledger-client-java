@@ -1,0 +1,26 @@
+[[resources-peer]]
+== Peer
+
+[[resources-find-peers]]
+=== Find Peers template
+
+==== Request structure
+include::{snippets}/peer/find-peers/http-request.adoc[]
+
+==== Example response
+include::{snippets}/peer/find-peers/http-response.adoc[]
+
+==== CURL request
+include::{snippets}/peer/find-peers/curl-request.adoc[]
+
+[[resources-find-peers-by-channel]]
+=== Find Peers by channel template
+
+==== Request structure
+include::{snippets}/peer/find-peers-by-channel/http-request.adoc[]
+
+==== Example response
+include::{snippets}/peer/find-peers-by-channel/http-response.adoc[]
+
+==== CURL request
+include::{snippets}/peer/find-peers-by-channel/curl-request.adoc[]

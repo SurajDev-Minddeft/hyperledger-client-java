@@ -1,0 +1,50 @@
+[[resources-channel]]
+== Channel
+
+[[resources-create-channel]]
+=== Create Channel template
+
+==== Request structure
+include::{snippets}/channel/create-channel/http-request.adoc[]
+
+==== Example response
+include::{snippets}/channel/create-channel/http-response.adoc[]
+
+==== CURL request
+include::{snippets}/channel/create-channel/curl-request.adoc[]
+
+[[resources-join-channel]]
+=== Join Channel template
+
+==== Request structure
+include::{snippets}/channel/join-channel/http-request.adoc[]
+
+==== Example response
+include::{snippets}/channel/join-channel/http-response.adoc[]
+
+==== CURL request
+include::{snippets}/channel/join-channel/curl-request.adoc[]
+
+[[resources-find-channels]]
+=== Find Channels template
+
+==== Request structure
+include::{snippets}/channel/find-channels/http-request.adoc[]
+
+==== Example response
+include::{snippets}/channel/find-channels/http-response.adoc[]
+
+==== CURL request
+include::{snippets}/channel/find-channels/curl-request.adoc[]
+
+[[resources-attach-channel]]
+=== Attach silo to a channel template
+
+==== Request structure
+include::{snippets}/channel/attach-channel/http-request.adoc[]
+
+==== Example response
+include::{snippets}/channel/attach-channel/http-response.adoc[]
+
+==== CURL request
+include::{snippets}/channel/attach-channel/curl-request.adoc[]
